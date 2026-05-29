@@ -1,0 +1,226 @@
+/* .counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+} */
+
+p {
+  color: cornsilk;
+}
+
+h1 {
+  color: cornsilk;
+}
+
+body{
+
+  background-color: #212121;
+}
+
+ .hero {
+  
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+} 
+
+
+#center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: flex-start; 
+  gap: 25px; 
+  margin-top: 25px;
+  margin-bottom: 25px; 
+}
+  .form{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex; /*todo alineado*/
+    gap: 1rem; /*distancia entre cada item*/
+    flex-direction: column; /*acomodarlo tipo columna*/
+    background-color: rgb(51, 51, 51);
+    padding: 1rem;
+    border-radius: 8px;
+
+
+  }
+
+  .form input,
+  .form textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #1b1b1b;
+    color: white;
+  }
+
+.notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.nota{
+  background-color: rgb(51, 51, 51);
+  color: cornsilk;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.nota button{
+  
+  margin-top: 25px;
+  margin-right: 0.5rem;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: cornsilk;
+  background-color: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.form button{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: cornsilk;
+  background-color: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background-color: #cfcfcf;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.eliminar{
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(70, 70, 70);
+  background-color:color(from rgb(117, 13, 13) #1b1b1b );
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+
+  &:hover {
+    background-color: darkred;
+    color: cornsilk;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.NOeliminar{
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(70, 70, 70);
+  background-color:color(from rgb(117, 13, 13) #1b1b1b );
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+
+  &:hover {
+    background-color: rgb(11, 90, 4);
+    color: cornsilk;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
